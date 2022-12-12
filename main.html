@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Meta data and page setup-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grab The Axe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="interaction.js"></script>
+  </head>
+  <body onmousewheel="scrollSpin()">
+    <!--<base
+      href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg"
+    />-->
+    <img src="./images/white logo.png" id="shadow_logo" />
+    <img src="./images/red logo.png" id="logo" />
+    <div id="carousel">
+      <figure id="spinner">
+        <img src="wanaka-tree.jpg" id="frame" alt />
+        <img src="still-lake.jpg" id="frame" alt />
+        <img src="pink-milford-sound.jpg" id="frame" alt />
+        <img src="paradise.jpg" id="frame" alt />
+        <img src="morekai.jpg" id="frame" alt />
+        <img src="milky-blue-lagoon.jpg" id="frame" alt />
+        <img src="milky-blue-lagoon.jpg" id="frame" alt />
+        <img src="lake-tekapo.jpg" id="frame" alt />
+        <img src="milford-sound.jpg" id="frame" alt />
+      </figure>
+    </div>
+    <span class="arrow-prev" onclick="galleryspin('-')"></span>
+    <span class="arrow-next" onclick="galleryspin('')"></span>
+    <p style="color: white;"><span id="demo">You are not scrolling</span></p>
+    <p style="color: white;">Angle: <span id="Ademo"></span></p>
+    <p style="color: white;">Click angle: <span id="Cdemo"></span></p>
+    <p style="color: white;">counter: <span id="counterDemo"></span></p>
+    <br />
+    <br />
+  </body>
+</html>
